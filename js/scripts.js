@@ -21,5 +21,4 @@ $(document).ready(function() {
   var number2 = parseInt(prompt("Enter another number:"));
 
   alert(add(number1, number2));
-
 });
