@@ -34,4 +34,12 @@ $(document).ready(function() {
     var result = (subtract(number1, number2));
     $("#outputSub").text(result);
   });
+
+  $("form#div").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#div1").val());
+    var number2 = parseInt($("#div2").val());
+    var result = (divide(number1, number2));
+    $(#"outputDiv").text(result);
+  });
 });
