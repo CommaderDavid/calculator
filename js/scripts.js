@@ -40,6 +40,14 @@ $(document).ready(function() {
     var number1 = parseInt($("#div1").val());
     var number2 = parseInt($("#div2").val());
     var result = (divide(number1, number2));
-    $(#"outputDiv").text(result);
+    $("#outputDiv").text(result);
+  });
+
+  $("form#mult").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#mult1").val());
+    var number2 = parseInt($("#mult2").val());
+    var result = (multiply(number1, number2));
+    $("#outputMult").text(result);
   });
 });
